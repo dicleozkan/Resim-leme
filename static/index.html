@@ -234,6 +234,11 @@
     <script>
         // Netlify environment variables'ı window objesine ekle
         window.BACKEND_URL = '%%BACKEND_URL%%';
+        
+        // Fallback için
+        if (!window.BACKEND_URL || window.BACKEND_URL === '%%BACKEND_URL%%') {
+            window.BACKEND_URL = 'https://resim-isleme-api.onrender.com';
+        }
     </script>
     <script src="/static/script.js"></script>
 </body>

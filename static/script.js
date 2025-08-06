@@ -8,6 +8,9 @@ const BACKEND_URL = window.location.hostname === 'localhost' || window.location.
     ? 'http://127.0.0.1:8080' 
     : (window.BACKEND_URL || 'https://resim-isleme-api.onrender.com'); // Netlify environment variable
 
+// Debug için backend URL'ini konsola yazdır
+console.log('Backend URL:', BACKEND_URL);
+
 // DOM elementleri
 const uploadArea = document.getElementById('uploadArea');
 const fileInput = document.getElementById('fileInput');
