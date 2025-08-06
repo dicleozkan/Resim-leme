@@ -6,7 +6,7 @@ let selectedOutputPath = null;
 // Backend URL'i - production'da değiştirilecek
 const BACKEND_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
     ? 'http://127.0.0.1:8080' 
-    : 'https://your-backend-url.onrender.com'; // Bu URL'i backend'inizde değiştirin
+    : 'https://resim-isleme-api.onrender.com'; // Render'da host ettiğinizde bu URL'i güncelleyin
 
 // DOM elementleri
 const uploadArea = document.getElementById('uploadArea');
