@@ -1,6 +1,6 @@
 [build]
   publish = "static"
-  command = ""
+  command = "node build.js"
 
 [[redirects]]
   from = "/*"
