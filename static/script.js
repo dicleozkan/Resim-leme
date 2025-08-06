@@ -3,10 +3,10 @@ let uploadedFile = null;
 let uploadedFilename = null;
 let selectedOutputPath = null;
 
-// Backend URL'i - environment variable'dan al veya fallback kullan
+// Backend URL'i - doğrudan tanımla
 const BACKEND_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
     ? 'http://127.0.0.1:8080' 
-    : (window.BACKEND_URL || 'https://resim-isleme-api.onrender.com'); // Netlify environment variable
+    : 'https://resim-isleme-api.onrender.com'; // Production backend URL
 
 // Debug için backend URL'ini konsola yazdır
 console.log('Backend URL:', BACKEND_URL);
